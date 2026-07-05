@@ -3,14 +3,17 @@
 -- DROP (DEV ONLY - for eacy rebuilds)
 -- =========================
 
-DROP TABLE IF EXISTS dim_patient;
-DROP TABLE IF EXISTS dim_provider;
-DROP TABLE IF EXISTS dim_department;
-DROP TABLE IF EXISTS dim_medication;
+CREATE SCHEMA IF NOT EXISTS warehouse;
 
-DROP TABLE IF EXISTS fact_medication_orders;
-DROP TABLE IF EXISTS fact_medication_verification;
-DROP TABLE IF EXISTS fact_medication_dispense;
+DROP TABLE IF EXISTS warehouse.fact_medication_administration CASCADE;
+DROP TABLE IF EXISTS warehouse.fact_medication_dispense CASCADE;
+DROP TABLE IF EXISTS warehouse.fact_medication_verification CASCADE;
+DROP TABLE IF EXISTS warehouse.fact_medication_orders CASCADE;
+
+DROP TABLE IF EXISTS warehouse.dim_patient CASCADE;
+DROP TABLE IF EXISTS warehouse.dim_provider CASCADE;
+DROP TABLE IF EXISTS warehouse.dim_department CASCADE;
+DROP TABLE IF EXISTS warehouse.dim_medication CASCADE;
 
 -- =========================
 -- DIM TABLES
