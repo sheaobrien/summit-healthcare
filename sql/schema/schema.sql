@@ -110,6 +110,7 @@ CREATE TABLE warehouse.fact_medication_verification (
 CREATE TABLE warehouse.fact_medication_dispense (
 
     order_id INTEGER PRIMARY KEY,
+    dest_department_id INTEGER NOT NULL,
 
     dispense_time TIMESTAMP,
     dispense_quantity NUMERIC(10,2),
@@ -118,5 +119,26 @@ CREATE TABLE warehouse.fact_medication_dispense (
 
     CONSTRAINT fk_order_dispense
         FOREIGN KEY (order_id)
-        REFERENCES warehouse.fact_medication_orders(order_id)
+        REFERENCES warehouse.fact_medication_orders(order_id),
+
+    CONSTRAINT fk_department_dispense
+        FOREIGN KEY (dest_department_id)
+        REFERENCES warehouse.dim_department(department_id)
+);
+
+CREATE TABLE warehouse.fact_medication_administration (
+
+    order_id INTEGER PRIMARY KEY,
+    admin_department_id INTEGER NOT NULL,
+
+    admin_time TIMESTAMP,
+    timely_admin BOOLEAN,
+
+    CONSTRAINT fk_order_admin
+        FOREIGN KEY (order_id)
+        REFERENCES warehouse.fact_medication_orders(order_id),
+
+    CONSTRAINT fk_department_admin
+        FOREIGN KEY (admin_department_id)
+        REFERENCES warehouse.dim_department(department_id)
 );
