@@ -4,9 +4,21 @@
 Summit Health System is a fictional integrated healthcare system designed to simulate realistic hospital operations for healthcare analytics, pharmacy informatics, and AI product development. This project uses a PostgreSQL-based pharmacy analytics data warehouse demonstrating SQL, data modeling, ETL, and Power BI integration.
 The data warehouse structure intentionally focuses on pharmacy data. The synthetic operational data is generatd from realistic operational rules and workflows. Every patient encounter, medication order, and pharmacy event follows operational patterns that closely resemble a true modern health system.
 
-Summit Health Care serves as the initial development platform for future healthcare analytics products. The long-term vision of this project is the Summit Pharmacy Copilot, an AI-powered pharmacy operations platform.
+Summit Health System serves as the development platform for future healthcare analytics products.
 
-The purpose of this project is to demonstrate: 
+The long-term objective is the Summit Pharmacy Performance Copilot, an AI-powered pharmacy operations platform capable of:
+
+    - Explaining operational performance
+    - Detecting bottlenecks
+    - Recommending workflow improvements
+    - Benchmarking against peer organizations
+    - Forecasting pharmacy workload
+    - Interpreting KPI metrics
+    - Assisting pharmacy leadership with daily operational decision-making
+
+
+Technical skills demonstrated through this project include: 
+
     - Relational database design
     - SQL development
     - Healthcare analytics
@@ -16,8 +28,19 @@ The purpose of this project is to demonstrate:
     - Power BI analytics dashboards 
     - Cloud analytics tools
 
+# Project Roadmap
 
-## Summit Health Care Overview
+    1. Foundation
+    2. Syntheric Data
+    3. Analytics
+    4. Dashboards
+    5. Decision Engine
+    6. AI Copilot
+
+# Repository Structure
+    --explain every folder
+
+# Summit Health Care Overview
 
 Name: Summit Health Care
 Type: Regional Health System
@@ -29,7 +52,7 @@ Facilities:
     - Summit Specialty Pharmacy
     - Summit Outpatient Pharmacy
 
-# Pharmacy Department
+## Pharmacy Department
 Summit Health Care has 1 centralized inpatient pharmacy supporting all hospital locations, 1 outpatient pharmacy, and 1 specialty pharmacy.
 
 Pharmacy operations include:
@@ -42,11 +65,3 @@ Pharmacy operations include:
     - Pharmacy purchasing
 
 
----- Work in progress below ----
-## Architecture diagram
-## Technologies used
-## Database schema
---Fact and Dim tables
---Create KPI views --> KPI tables
---Data dictionary
-## Future roadmap
