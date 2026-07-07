@@ -32,3 +32,15 @@ Pharmacy operations include:
     - Medication safety services
     - Controlled substance management
     - Pharmacy purchasing
+
+
+How many hospitals?
+How many beds?
+Exactly which departments?
+How many medication orders per day?
+Which medications should exist?
+Which provider specialties?
+Which pharmacy workflows?
+How does a Monday differ from a Saturday?
+What does flu season look like?
+What makes Summit Health unique?
